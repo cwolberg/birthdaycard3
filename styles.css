@@ -1,0 +1,178 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+.legend{
+	position:absolute;
+	top:10px;
+	left:5px;
+	font-family: fantasy;
+	color:royalblue;
+	border-color: aqua;
+	border:1px;
+	text-shadow: aquamarine 1px 1px;
+}
+#turtle{
+width:64px;
+height:64px;
+}
+
+#happyBday{
+	position:absolute;
+	top:40px;
+	left:180px;	
+}
+#munch{
+	border-radius: 50%;
+	width:7.5%;
+	position:absolute;
+	top:210px;
+	right:210px;	
+	max-width: 100%;
+	height: auto;
+}
+#turtleSays {
+	border-radius: 50%;
+	width:50%;
+	max-width: 100%;
+	height: auto;
+  }
+
+
+canvas {
+	position:absolute;
+	top:120px;
+  }
+
+#page2{
+	height: 100vh;
+	width: 100vh;
+}
+.beach {
+    zoom: 4.035; 
+
+    display: block;
+    margin: 0 auto;
+	margin-left: 100px;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.top-row {
+	background-color: black;
+	height: 40vh;
+	min-height: 340px;
+	text-align: center;
+}
+
+.bottom-row {
+	background-color: black;
+	height: 60vh;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: center;
+	text-shadow: rgb(255, 255, 255) 2px 0 7px;
+	color: aqua;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 60%;
+	min-height: 120px;
+	height: 30%;
+	cursor: pointer;
+	background: aqua;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 10px 25px aqua, 0px -10px 25px aqua, inset 0px -5px 10px aqua, inset 0px 5px 10px aqua;
+	font-family: 'Open Sans', sans-serif;
+	color: purple;
+	font-size: 50px;
+	font-weight: bold;
+	transition: 500ms;
+}
+
+button:hover {
+	border: 2px solid aqua;
+	animation: hueRotation 2s linear infinite;
+}
+
+@keyframes hueRotation {
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+button:focus {
+	outline: none;
+}
+
+
+@keyframes bdayTitle {
+	0% {
+		transform: scale(0.1, 0.1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+	button {
+		height: 220px;
+		font-size: 30px;
+	}
+	.top-row {
+		height: 30vh;
+	}
+	h1 {
+		font-size: 60px;
+	}
+	.bottom-row {
+		height: 70vh;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1000px) {
+	.top-row {
+		height: 30vh;
+	}
+	.bottom-row {
+		height: 70vh;
+	}
+}

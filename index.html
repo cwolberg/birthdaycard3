@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charlotte Birthday Card</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <div class="container" id="page1">
+            <div class='row'>
+              <div class='column'>
+                <div class='top-row'>
+                    <h1 id="preCard" class="isIt">Are you Charlotte and is it your birthday?</h1>
+                </div>
+              </div>
+              <div class='row 2'>
+                <div class='column'>
+                  <div class='bottom-row'>
+                    <button class="noselect" id="preCardBtn"onclick="openCard()">If yes, click this button</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    <div id="page2">
+      <div class="beach">
+       <div class="legend">Controls:
+         <br><br>
+         AWSD: Move
+         <br><br>
+         Q: Sleep
+         <br><br>
+         E: Bite
+         <br><br>
+         Z: Hide
+         <br><br>
+         C: HappyBday
+        
+       </div>
+        <canvas width="300" height="120"></canvas>
+<img src="beach.gif">
+<div id="happyBday">
+  <img id="turtleSays" src="turtleSays.png">
+</div>
+<img id="munch" src="munch.png">
+    
+      </div>  
+    </div>
+      
+    <audio id="crunch" src="Potato-chip-crunch-single-bite.mp3"></audio>
+    <audio id="music" src="3-22 Welcome to a Tour Island! (_Day Sunny Weather_).mp3"></audio>
+    <audio id="speaking" src="speaking.mp3"></audio>
+    <audio id="hide" src="hide.mp3"></audio>
+    
+  <script src="scripts.js"></script>
+</body>
+</html>
