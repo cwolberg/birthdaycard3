@@ -3,6 +3,10 @@ html {
 	height: 100%;
 	margin: 0;
 }
+
+#videobutton{
+	all: initial;
+}
 .video{
 	position:absolute;
 	top:8px;
@@ -39,9 +43,7 @@ html {
   }
 
   
-#videobutton{
-	all: initial;
-}
+
 .legend{
 	position:absolute;
 	top:10px;
