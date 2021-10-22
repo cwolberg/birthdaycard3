@@ -44,7 +44,9 @@ function openCard() {
   let positionY = 0;
   let img = new Image();
 
-
+function linkToVideo(){
+  window.location='https://youtu.be/ThWKepbuKVY';
+}
   
   window.addEventListener('keydown', keyDownListener);
   function keyDownListener(event) {
@@ -78,43 +80,44 @@ function openCard() {
     let hasMoved = false;
     let talking = false;
   
-    if (keyPresses.w) {
+    if (keyPresses.w ||keyPresses.W ) {
         MOVEMENT_SPEED = 0.5;
       CYCLE_LOOP = [0, 1, 2,3]; 
       moveCharacter(0, -MOVEMENT_SPEED, FACING_UP);
       hasMoved = true;
-    } else if (keyPresses.s) {
+     
+    } else if (keyPresses.s || keyPresses.S) {
         MOVEMENT_SPEED = 0.5;
       CYCLE_LOOP = [0, 1, 2,3]; 
       moveCharacter(0, MOVEMENT_SPEED, FACING_DOWN);
       hasMoved = true;
     }
   
-    if (keyPresses.c) {
+    if (keyPresses.c || keyPresses.C) {
       MOVEMENT_SPEED = 0.0;
       CYCLE_LOOP = [0, 1, 2,3,4,5,6,7,8,9];
       moveCharacter(-MOVEMENT_SPEED, 0, TALKING);
       hasMoved = true;
       talking=true;
-    } else if (keyPresses.d) {
+    } else if (keyPresses.d || keyPresses.D) {
       CYCLE_LOOP = [0, 1, 2,3]; 
       MOVEMENT_SPEED = 0.5;
       moveCharacter(MOVEMENT_SPEED, 0, FACING_RIGHT);
       hasMoved = true;
     }
-    else if (keyPresses.a) {
+    else if (keyPresses.a || keyPresses.A) {
         CYCLE_LOOP = [0, 1, 2,3]; 
         MOVEMENT_SPEED = 0.5;
         moveCharacter(-MOVEMENT_SPEED, 0, FACING_LEFT);
         hasMoved = true;
       }
 
-    if (keyPresses.q) {
+    if (keyPresses.q || keyPresses.Q) {
         MOVEMENT_SPEED = 0.0;
       CYCLE_LOOP = [0, 1, 2,3,4,5]; 
       moveCharacter(0, -MOVEMENT_SPEED, SLEEPING);
       hasMoved = true;
-    } else if (keyPresses.e) {
+    } else if (keyPresses.e || keyPresses.E) {
         MOVEMENT_SPEED = 0.0;
       CYCLE_LOOP = [0, 1, 2,3,4]; 
       moveCharacter(0, MOVEMENT_SPEED, EATING);
@@ -125,7 +128,7 @@ function openCard() {
         }else{munch=false;}
     }
 
-    if (keyPresses.z) {
+    if (keyPresses.z || keyPresses.Z) {
         MOVEMENT_SPEED = 0.0;
       CYCLE_LOOP = [0, 1, 2,3,4,5,6,7,8,9]; 
       moveCharacter(0, -MOVEMENT_SPEED, SHELLSHOCKED);
@@ -134,6 +137,7 @@ function openCard() {
       hide.play();
       FRAME_LIMIT = 10.05;
     } 
+ 
 
     if(munch){
         document.getElementById("munch").style.display = "block";
@@ -144,7 +148,7 @@ function openCard() {
         document.getElementById("munch").style.display = "none";
     }
 
-
+  
   
     if (hasMoved) {
       frameCount++;

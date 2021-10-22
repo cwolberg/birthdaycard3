@@ -3,6 +3,45 @@ html {
 	height: 100%;
 	margin: 0;
 }
+.video{
+	position:absolute;
+	top:8px;
+	right:8px;
+	font-family: fantasy;
+	font-size:16px;
+	color:royalblue;
+	border-color: aqua;
+	border:1px;
+	text-shadow: aquamarine 1px 1px;
+}
+.video img{
+	max-width: 90px;
+	border-radius: 50%;
+}
+#videobutton:hover{
+	opacity: 0.75;
+	cursor: pointer;
+  }
+
+  #videobutton:active {
+	content: "";
+	background: #90EE90;
+	display: block;
+	opacity: 1;
+	transition: all 0.2s
+  }
+
+  #videobutton:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
+  
+#videobutton{
+	all: initial;
+}
 .legend{
 	position:absolute;
 	top:10px;
