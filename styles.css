@@ -151,7 +151,7 @@ h1 {
 	-webkit-tap-highlight-color: transparent;
 }
 
-button {
+#preCardBtn {
 	width: 60%;
 	min-height: 120px;
 	height: 30%;
@@ -167,7 +167,7 @@ button {
 	transition: 500ms;
 }
 
-button:hover {
+#preCardBtn:hover {
 	border: 2px solid aqua;
 	animation: hueRotation 2s linear infinite;
 }
@@ -193,27 +193,3 @@ button:focus {
 }
 
 
-@media only screen and (max-width: 450px) {
-	button {
-		height: 220px;
-		font-size: 30px;
-	}
-	.top-row {
-		height: 30vh;
-	}
-	h1 {
-		font-size: 60px;
-	}
-	.bottom-row {
-		height: 70vh;
-	}
-}
-
-@media only screen and (min-width: 451px) and (max-width: 1000px) {
-	.top-row {
-		height: 30vh;
-	}
-	.bottom-row {
-		height: 70vh;
-	}
-}
