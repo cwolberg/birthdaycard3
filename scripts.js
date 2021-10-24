@@ -45,7 +45,7 @@ function openCard() {
   let img = new Image();
 
 function linkToVideo(){
-  window.location='https://youtu.be/ThWKepbuKVY';
+  window.location='';
 }
   
   window.addEventListener('keydown', keyDownListener);

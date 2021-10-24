@@ -1,4 +1,13 @@
 body,
+/*
+Deprecated html
+      <div class="video">
+         Click the <br> turtle below<br>
+          for a video<br> from Hawaii <br><br>
+         <button id="videobutton" onclick="linkToVideo()"><img src="hawaiiTurtle.jpg"></button>
+       </div>
+
+*/
 html {
 	height: 100%;
 	margin: 0;
